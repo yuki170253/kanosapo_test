@@ -1,0 +1,16 @@
+PODS:
+  - YYBottomSheet (1.1.0)
+
+DEPENDENCIES:
+  - YYBottomSheet
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - YYBottomSheet
+
+SPEC CHECKSUMS:
+  YYBottomSheet: dfb22ce474791d60ee578bf2d8a2221857a07882
+
+PODFILE CHECKSUM: c17498d9e50a061e6deab3f44ce12fd18fea1122
+
+COCOAPODS: 1.7.1
