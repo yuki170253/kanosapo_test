@@ -28,12 +28,13 @@ class HomeViewController: UIViewController {
                 
             }
         }
-        let title = "Fruits"
-        let dataArray = ["apple", "grape", "watermelon", "banana", "strawberry", "cherry", "pineapple", "pear"]
+        let title = "ToDoリスト"
+        let dataArray = arrayTitle(array: todoListArray)
         let bottomUpTable = YYBottomSheet.init(bottomUpTableTitle: title, dataArray: dataArray, options: nil) { (cell) in
-            print(cell.indexPath)
-            let myTodo = todoListArray[cell.indexPath[0]]
-            myTodo.index = cell.indexPath[0]
+            print(cell.indexPath[1])
+            let myTodo = todoListArray[cell.indexPath[1]]
+            print(myTodo.todoTitle!)
+            myTodo.index = cell.indexPath[1]
             self.performSegue(withIdentifier: "toEvaluViewController", sender: myTodo)
         }
         bottomUpTable.show()

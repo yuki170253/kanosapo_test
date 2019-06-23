@@ -125,6 +125,10 @@ class TodoTableViewController: UIViewController, UITableViewDataSource, UITableV
             }
         }
     }
+    
+    @IBAction func restart(_ segue: UIStoryboardSegue) {
+        loadView()
+    }
 }
 
 

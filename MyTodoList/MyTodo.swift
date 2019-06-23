@@ -22,6 +22,16 @@ class MyTodo: NSObject, NSSecureCoding {
     }
 }
 
+func arrayTitle(array: Array<MyTodo>) -> Array<String> {
+    var arrayTitle = [String]()
+    for x in array {
+        if let title = x.todoTitle {
+            arrayTitle.append(title)
+        }
+    }
+    return arrayTitle
+}
+
 func truecount(array: Array<MyTodo>) -> Int {
     var count = 0
     for x in array {
@@ -31,5 +41,6 @@ func truecount(array: Array<MyTodo>) -> Int {
     }
     return count
 }
+
 
 
