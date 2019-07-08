@@ -10,6 +10,7 @@
 		97B61E19B768CAC7ABB1D643 /* Pods_MyTodoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878436918F12DDED9262EDD2 /* Pods_MyTodoList.framework */; };
 		D8279ACA22BA529C00ACB941 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8279AC922BA529C00ACB941 /* HomeViewController.swift */; };
 		D8279ACC22BA567400ACB941 /* EvaluViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8279ACB22BA567400ACB941 /* EvaluViewController.swift */; };
+		D841072C22CCEA7200F3C359 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D841072B22CCEA7200F3C359 /* TabBarController.swift */; };
 		D8FFBBA522AA7F98006039FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FFBBA422AA7F98006039FC /* AppDelegate.swift */; };
 		D8FFBBA722AA7F99006039FC /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FFBBA622AA7F99006039FC /* TodoTableViewController.swift */; };
 		D8FFBBAA22AA7F99006039FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FFBBA822AA7F99006039FC /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 		AA8D2C1DCA0CA0B38FC9BA22 /* Pods-MyTodoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTodoList.debug.xcconfig"; path = "Target Support Files/Pods-MyTodoList/Pods-MyTodoList.debug.xcconfig"; sourceTree = "<group>"; };
 		D8279AC922BA529C00ACB941 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D8279ACB22BA567400ACB941 /* EvaluViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluViewController.swift; sourceTree = "<group>"; };
+		D841072B22CCEA7200F3C359 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		D8FFBBA122AA7F98006039FC /* MyTodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FFBBA422AA7F98006039FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8FFBBA622AA7F99006039FC /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				D8FFBBA622AA7F99006039FC /* TodoTableViewController.swift */,
 				D8FFBBB622ADA440006039FC /* EditViewController.swift */,
 				D8FFBBB822ADAD2B006039FC /* MyTodo.swift */,
+				D841072B22CCEA7200F3C359 /* TabBarController.swift */,
 				D8FFBBA822AA7F99006039FC /* Main.storyboard */,
 				D8FFBBAB22AA7F9A006039FC /* Assets.xcassets */,
 				D8FFBBAD22AA7F9A006039FC /* LaunchScreen.storyboard */,
@@ -219,6 +222,7 @@
 				D8279ACA22BA529C00ACB941 /* HomeViewController.swift in Sources */,
 				D8FFBBA722AA7F99006039FC /* TodoTableViewController.swift in Sources */,
 				D8FFBBA522AA7F98006039FC /* AppDelegate.swift in Sources */,
+				D841072C22CCEA7200F3C359 /* TabBarController.swift in Sources */,
 				D8FFBBB722ADA440006039FC /* EditViewController.swift in Sources */,
 				D8FFBBB922ADAD2B006039FC /* MyTodo.swift in Sources */,
 			);

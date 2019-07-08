@@ -6,6 +6,8 @@ class MyTodo: NSObject, NSSecureCoding {
     }
     var todoTitle: String?
     var todoDone: Bool = false
+    var donetime: Int = 0
+    var dotime: Int = 0
     var index: Int?
     //コンストラクタ
     override init() {
@@ -14,11 +16,15 @@ class MyTodo: NSObject, NSSecureCoding {
     required init?(coder aDecoder: NSCoder) {
         todoTitle = aDecoder.decodeObject(forKey: "todoTitle") as? String
         todoDone = aDecoder.decodeBool(forKey: "todoDone")
+        donetime = aDecoder.decodeInteger(forKey: "donetime")
+        dotime = aDecoder.decodeInteger(forKey: "dotime")
     }
     //エンコード処理(入れる時)
     func encode(with aCoder: NSCoder) {
         aCoder.encode(todoTitle, forKey: "todoTitle")
         aCoder.encode(todoDone, forKey: "todoDone")
+        aCoder.encode(donetime, forKey: "donetime")
+        aCoder.encode(dotime, forKey: "dotime")
     }
 }
 

@@ -12,7 +12,6 @@ class TodoTableViewController: UIViewController, UITableViewDataSource, UITableV
     
     var todoList = [MyTodo]()
     @IBOutlet weak var tableView: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         //保存しているToDoの読み込み処理
@@ -29,9 +28,15 @@ class TodoTableViewController: UIViewController, UITableViewDataSource, UITableV
         let count: Double = Double(todoList.count)
         let tcount: Double = Double(truecount(array: todoList))
         let rate: Double = tcount/count
-        let percent: Int = Int(rate * 100)
-        let str: String = "ToDoリスト：" + String(percent) + "%達成"
-        self.navigationItem.title = str;
+        if rate.isNaN{ //問題あり
+            let str: String = "ToDoリストが設定されていません"
+            self.navigationItem.title = str;
+        }else {
+            let percent: Int = Int(rate * 100)
+            let str: String = "ToDoリスト：" + String(percent) + "%達成"
+            self.navigationItem.title = str;
+        }
+        print("TodoTableViewに遷移")
     }
 
     @IBAction func tapAddButton(_ sender: Any) {

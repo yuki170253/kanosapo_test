@@ -9,20 +9,19 @@
 import UIKit
 import YYBottomSheet
 class HomeViewController: UIViewController {
-
-    override func viewDidLoad() {
+    var todoListArray = [MyTodo]()
+    override func viewDidLoad() { //切り替えても呼び出されない...
         super.viewDidLoad()
-
+        print("homeviewに遷移")
         // Do any additional setup after loading the view.
     }
     
     @IBAction func TableShowButton(_ sender: Any) {
-        var todoListArray = [MyTodo]()
         let userDefaults = UserDefaults.standard
         if let storedTodoList = userDefaults.object(forKey: "todoList") as? Data {
             do {
                 if let unarchiveTodoList = try NSKeyedUnarchiver.unarchivedObject(ofClasses: [NSArray.self, MyTodo.self], from: storedTodoList) as? [MyTodo] {
-                    todoListArray.append(contentsOf: unarchiveTodoList)
+                    todoListArray = unarchiveTodoList
                 }
             } catch {
                 
@@ -32,11 +31,14 @@ class HomeViewController: UIViewController {
         let dataArray = arrayTitle(array: todoListArray)
         let bottomUpTable = YYBottomSheet.init(bottomUpTableTitle: title, dataArray: dataArray, options: nil) { (cell) in
             print(cell.indexPath[1])
-            let myTodo = todoListArray[cell.indexPath[1]]
-            print(myTodo.todoTitle!)
+            let myTodo = self.todoListArray[cell.indexPath[1]]
+            print("todoTitle"+myTodo.todoTitle!)
+            print("donetime="+String(myTodo.donetime))
             myTodo.index = cell.indexPath[1]
             self.performSegue(withIdentifier: "toEvaluViewController", sender: myTodo)
         }
+        print("データ数")
+        print(todoListArray.count)
         bottomUpTable.show()
     }
     
@@ -46,5 +48,8 @@ class HomeViewController: UIViewController {
             // ViewControllerのtextVC2にメッセージを設定
             vc.myTodo = sender as! MyTodo
         }
+    }
+    @IBAction func restart(_ segue: UIStoryboardSegue) {
+        loadView()
     }
 }
