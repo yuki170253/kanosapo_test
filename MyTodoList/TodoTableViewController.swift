@@ -14,21 +14,29 @@ class TodoTableViewController: UIViewController, UITableViewDataSource, UITableV
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("viewDidLoad=TodoTableViewに遷移")
+    }
+    
+    // 画面に表示される直前に呼ばれます。
+    // viewDidLoadとは異なり毎回呼び出されます。
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         //保存しているToDoの読み込み処理
         let userDefaults = UserDefaults.standard
         if let storedTodoList = userDefaults.object(forKey: "todoList") as? Data {
             do {
                 if let unarchiveTodoList = try NSKeyedUnarchiver.unarchivedObject(ofClasses: [NSArray.self, MyTodo.self], from: storedTodoList) as? [MyTodo] {
-                    todoList.append(contentsOf: unarchiveTodoList)
+                    todoList = unarchiveTodoList
                 }
             } catch {
                 
             }
         }
+        //タスク達成率
         let count: Double = Double(todoList.count)
         let tcount: Double = Double(truecount(array: todoList))
         let rate: Double = tcount/count
-        if rate.isNaN{ //問題あり
+        if rate.isNaN { //問題あり
             let str: String = "ToDoリストが設定されていません"
             self.navigationItem.title = str;
         }else {
@@ -36,9 +44,9 @@ class TodoTableViewController: UIViewController, UITableViewDataSource, UITableV
             let str: String = "ToDoリスト：" + String(percent) + "%達成"
             self.navigationItem.title = str;
         }
-        print("TodoTableViewに遷移")
+        print("viewWillApppear=TodoTableViewに遷移")
     }
-
+    /*
     @IBAction func tapAddButton(_ sender: Any) {
         let alertController = UIAlertController(title: "ToDo追加", message: "ToDoを入力してください",
                                                 preferredStyle: UIAlertController.Style.alert)
@@ -73,6 +81,7 @@ class TodoTableViewController: UIViewController, UITableViewDataSource, UITableV
         //アラートダイアログを表示
         present(alertController, animated: true, completion: nil)
     }//tapAddButtonの処理
+    */
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return todoList.count
@@ -127,6 +136,17 @@ class TodoTableViewController: UIViewController, UITableViewDataSource, UITableV
                 userDefaults.synchronize()
             } catch {
                 
+            }
+            let count: Double = Double(todoList.count)
+            let tcount: Double = Double(truecount(array: todoList))
+            let rate: Double = tcount/count
+            if rate.isNaN{ //問題あり
+                let str: String = "ToDoリストが設定されていません"
+                self.navigationItem.title = str;
+            }else {
+                let percent: Int = Int(rate * 100)
+                let str: String = "ToDoリスト：" + String(percent) + "%達成"
+                self.navigationItem.title = str;
             }
         }
     }
