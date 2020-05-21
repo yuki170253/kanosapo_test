@@ -1,0 +1,12 @@
+${PODS_ROOT}/Target Support Files/Pods-MyTodoList/Pods-MyTodoList-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AutoInsetter/AutoInsetter.framework
+${BUILT_PRODUCTS_DIR}/BEMCheckBox/BEMCheckBox.framework
+${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework
+${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework
+${BUILT_PRODUCTS_DIR}/Pageboy/Pageboy.framework
+${BUILT_PRODUCTS_DIR}/PullableSheet/PullableSheet.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
+${BUILT_PRODUCTS_DIR}/Tabman/Tabman.framework
+${BUILT_PRODUCTS_DIR}/UBottomSheet/UBottomSheet.framework
+${BUILT_PRODUCTS_DIR}/YYBottomSheet/YYBottomSheet.framework

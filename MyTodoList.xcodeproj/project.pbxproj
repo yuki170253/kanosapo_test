@@ -7,35 +7,215 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		97B61E19B768CAC7ABB1D643 /* Pods_MyTodoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 878436918F12DDED9262EDD2 /* Pods_MyTodoList.framework */; };
+		2221407E811387E65417991C /* Pods_MyTodoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CADABAF082FB4E606B2D6EB /* Pods_MyTodoList.framework */; };
+		3128E78423982F910020C148 /* DayResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E78323982F910020C148 /* DayResultViewController.swift */; };
+		3128E78623982FA90020C148 /* DayResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E78523982FA90020C148 /* DayResultDetailViewController.swift */; };
+		3128E78823982FB80020C148 /* SubDayResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E78723982FB80020C148 /* SubDayResultDetailViewController.swift */; };
+		3128E78A23982FCD0020C148 /* WeekResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E78923982FCD0020C148 /* WeekResultViewController.swift */; };
+		3128E78C23982FE00020C148 /* WeekResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E78B23982FE00020C148 /* WeekResultDetailViewController.swift */; };
+		3128E78E239830750020C148 /* SubWeekResultDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E78D239830750020C148 /* SubWeekResultDetailViewController.swift */; };
+		3128E790239830A50020C148 /* TabmanDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E78F239830A50020C148 /* TabmanDisplay.swift */; };
+		3128E792239830C00020C148 /* DataEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E791239830C00020C148 /* DataEntry.swift */; };
+		3128E794239830E40020C148 /* CustomSegments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E793239830E40020C148 /* CustomSegments.swift */; };
+		3128E796239830F30020C148 /* UIBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E795239830F30020C148 /* UIBezierPathExtension.swift */; };
+		3128E798239831020020C148 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E797239831020020C148 /* CALayerExtension.swift */; };
+		3128E79A239831130020C148 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E799239831130020C148 /* ArrayExtension.swift */; };
+		3128E79C239831370020C148 /* BasicBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E79B239831370020C148 /* BasicBarChart.swift */; };
+		3128E79E239831480020C148 /* BasicBarChartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E79D239831480020C148 /* BasicBarChartPresenter.swift */; };
+		3128E7A0239831590020C148 /* BasicBarEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E79F239831590020C148 /* BasicBarEntry.swift */; };
+		3128E7A22398316E0020C148 /* BasicLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E7A12398316E0020C148 /* BasicLineChart.swift */; };
+		3128E7A42398317E0020C148 /* CurveAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3128E7A32398317E0020C148 /* CurveAlgorithm.swift */; };
+		87153621236D465F004EAA2D /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87153620236D465E004EAA2D /* SampleView.swift */; };
+		87BC941E23621BE500379693 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BC941D23621BE500379693 /* ViewController.swift */; };
 		D8279ACA22BA529C00ACB941 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8279AC922BA529C00ACB941 /* HomeViewController.swift */; };
 		D8279ACC22BA567400ACB941 /* EvaluViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8279ACB22BA567400ACB941 /* EvaluViewController.swift */; };
+		D82D5AF323418AF000A9214C /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D5AF223418AF000A9214C /* HomeNavigationController.swift */; };
+		D82D5AF92341A66500A9214C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82D5AF82341A66500A9214C /* CustomTableViewCell.swift */; };
+		D83EB6C4237E55650021509A /* save_alt_black.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6C3237E55650021509A /* save_alt_black.png */; };
+		D83EB6C7237F28DB0021509A /* box_big.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6C5237F28DA0021509A /* box_big.png */; };
+		D83EB6C8237F28DB0021509A /* checkbox_big.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6C6237F28DB0021509A /* checkbox_big.png */; };
+		D83EB6CA237F2FF10021509A /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6C9237F2FF10021509A /* close.png */; };
+		D83EB6CD237F385D0021509A /* fill_heart.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6CB237F385D0021509A /* fill_heart.png */; };
+		D83EB6CE237F385D0021509A /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6CC237F385D0021509A /* heart.png */; };
+		D83EB6D0238371990021509A /* replay_black_192x192.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6CF238371990021509A /* replay_black_192x192.png */; };
+		D83EB6D2238378CD0021509A /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83EB6D1238378CD0021509A /* CustomButton.swift */; };
+		D83EB6D8238522700021509A /* kanojo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6D7238522700021509A /* kanojo.jpg */; };
+		D83EB6DC2385A9E80021509A /* book.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6D92385A9E70021509A /* book.png */; };
+		D83EB6DE2385A9E80021509A /* desk.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6DB2385A9E80021509A /* desk.png */; };
+		D83EB6E02385AC360021509A /* calendar_home.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6DF2385AC350021509A /* calendar_home.png */; };
+		D83EB6E32385AED40021509A /* calendar_label.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6E12385AED30021509A /* calendar_label.png */; };
+		D83EB6E42385AED40021509A /* todo_label.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6E22385AED40021509A /* todo_label.png */; };
+		D83EB6E9238E343E0021509A /* メンヘラ彼女_75.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6E5238E343D0021509A /* メンヘラ彼女_75.png */; };
+		D83EB6EA238E343E0021509A /* 背景simple.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6E6238E343D0021509A /* 背景simple.png */; };
+		D83EB6EB238E343E0021509A /* メンヘラ彼女_100.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6E7238E343E0021509A /* メンヘラ彼女_100.png */; };
+		D83EB6EC238E343E0021509A /* メンヘラ彼女_50.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6E8238E343E0021509A /* メンヘラ彼女_50.png */; };
+		D83EB6EF2390382E0021509A /* メンヘラ彼女_0.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6ED2390382D0021509A /* メンヘラ彼女_0.png */; };
+		D83EB6F02390382E0021509A /* アセット 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6EE2390382E0021509A /* アセット 2.png */; };
+		D83EB6F223903E3B0021509A /* セリフ_反転.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6F123903E3A0021509A /* セリフ_反転.png */; };
+		D83EB6F4239421810021509A /* 背景ver.2.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6F3239421810021509A /* 背景ver.2.png */; };
+		D83EB6F82395F92F0021509A /* todolist.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6F62395F92F0021509A /* todolist.png */; };
+		D83EB6FB2395FAB20021509A /* todolist.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6F92395FAB20021509A /* todolist.png */; };
+		D83EB6FC2395FAB20021509A /* calendara_1.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6FA2395FAB20021509A /* calendara_1.png */; };
+		D83EB6FE239600E90021509A /* アセット 9.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6FD239600E80021509A /* アセット 9.png */; };
+		D83EB70023975E5A0021509A /* 背景_test.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB6FF23975E5A0021509A /* 背景_test.png */; };
+		D83EB702239766330021509A /* メンヘラメーター.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB701239766330021509A /* メンヘラメーター.png */; };
+		D83EB708239808BF0021509A /* ふきだし_1.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB707239808BD0021509A /* ふきだし_1.png */; };
+		D83EB70A23980A760021509A /* ふきだし_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB70923980A760021509A /* ふきだし_2.png */; };
+		D83EB70C23980DE30021509A /* ふきだし_3.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB70B23980DE30021509A /* ふきだし_3.png */; };
+		D83EB70E23980F760021509A /* ふきだし_4.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB70D23980F760021509A /* ふきだし_4.png */; };
+		D83EB7102398110A0021509A /* ふきだし_4.png in Resources */ = {isa = PBXBuildFile; fileRef = D83EB70F2398110A0021509A /* ふきだし_4.png */; };
+		D89B40F823AA011A0073E302 /* database.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89B40F723AA011A0073E302 /* database.swift */; };
+		D8AD13AE23981CB3000BA77B /* TsukushiAMaruGothic.ttc in Resources */ = {isa = PBXBuildFile; fileRef = D8AD13AD23981686000BA77B /* TsukushiAMaruGothic.ttc */; };
+		D8AD13B0239A66DE000BA77B /* ふきだし_5.png in Resources */ = {isa = PBXBuildFile; fileRef = D8AD13AF239A66DE000BA77B /* ふきだし_5.png */; };
+		D8C8531F236D54C800FEFBE7 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8531E236D54C800FEFBE7 /* HomeTableViewController.swift */; };
+		D8C85323236D559600FEFBE7 /* NewCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C85322236D559600FEFBE7 /* NewCustomTableViewCell.swift */; };
+		D8CC777E239E95930040941C /* furikaeri.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CC777B239E95920040941C /* furikaeri.png */; };
+		D8CC777F239E95930040941C /* calendar_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CC777C239E95930040941C /* calendar_2.png */; };
+		D8CC7780239E95930040941C /* todolist_2.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CC777D239E95930040941C /* todolist_2.png */; };
+		D8CC7782239F65990040941C /* ふきだし_6.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CC7781239F65990040941C /* ふきだし_6.png */; };
+		D8CC778A23A007700040941C /* menhera_meter.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CC778923A0076F0040941C /* menhera_meter.png */; };
+		D8CC779B23A15B970040941C /* button_f.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CC779723A15B960040941C /* button_f.png */; };
+		D8CC779C23A15B970040941C /* button_f2.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CC779823A15B960040941C /* button_f2.png */; };
+		D8CC779D23A15B970040941C /* button_c.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CC779923A15B960040941C /* button_c.png */; };
+		D8CC779E23A15B970040941C /* button_t.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CC779A23A15B970040941C /* button_t.png */; };
+		D8CC77A023A1786D0040941C /* run.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CC779F23A1786D0040941C /* run.png */; };
+		D8CC77A223A185330040941C /* c_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D8CC77A123A185320040941C /* c_icon.png */; };
+		D8E543AE2375CC93005BBA86 /* ConfirmationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E543AC2375CC93005BBA86 /* ConfirmationTableViewCell.swift */; };
+		D8E543AF2375CC93005BBA86 /* ConfirmationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8E543AD2375CC93005BBA86 /* ConfirmationTableViewCell.xib */; };
+		D8E543B32375D12D005BBA86 /* speechBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E543B02375D12D005BBA86 /* speechBubble@2x.png */; };
+		D8E543B42375D12D005BBA86 /* メンヘラ_SD_0.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E543B12375D12D005BBA86 /* メンヘラ_SD_0.png */; };
+		D8E543B52375D12D005BBA86 /* メンヘラ_SD_100.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E543B22375D12D005BBA86 /* メンヘラ_SD_100.png */; };
+		D8E543B72375EC6C005BBA86 /* AllResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E543B62375EC6C005BBA86 /* AllResultsViewController.swift */; };
+		D8E5458123774DF2005BBA86 /* box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E5457C23774DF2005BBA86 /* box@2x.png */; };
+		D8E5458223774DF2005BBA86 /* メンヘラ_SD_0.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E5457D23774DF2005BBA86 /* メンヘラ_SD_0.png */; };
+		D8E5458323774DF2005BBA86 /* メンヘラ_SD_100.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E5457E23774DF2005BBA86 /* メンヘラ_SD_100.png */; };
+		D8E5458423774DF2005BBA86 /* speechBubble@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E5457F23774DF2005BBA86 /* speechBubble@2x.png */; };
+		D8E5458523774DF2005BBA86 /* checkBox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E5458023774DF2005BBA86 /* checkBox@2x.png */; };
+		D8E5458723774ED0005BBA86 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E5458623774ED0005BBA86 /* TodoCell.swift */; };
+		D8E545C9237C5386005BBA86 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E545C8237C5386005BBA86 /* ResultViewController.swift */; };
+		D8E545E8237CEE87005BBA86 /* icons8-再生ボタン.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E545E7237CEE87005BBA86 /* icons8-再生ボタン.png */; };
+		D8E545EA237CEF3D005BBA86 /* icons8-停止ボタン.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E545E9237CEF3D005BBA86 /* icons8-停止ボタン.png */; };
+		D8E545EE237CF2CE005BBA86 /* complete.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E545ED237CF2CE005BBA86 /* complete.png */; };
+		D8E545F0237CFAC0005BBA86 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E545EF237CFAC0005BBA86 /* UIView+Border.swift */; };
+		D8E545F8237E42F1005BBA86 /* EvaluViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E545F7237E42F1005BBA86 /* EvaluViewController2.swift */; };
+		D8E545FA237E48C0005BBA86 /* return.png in Resources */ = {isa = PBXBuildFile; fileRef = D8E545F9237E48C0005BBA86 /* return.png */; };
+		D8F366492336BC4900EE8681 /* EvaluDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F366482336BC4900EE8681 /* EvaluDetailsViewController.swift */; };
+		D8F3664B23379CD100EE8681 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F3664A23379CD100EE8681 /* ConfirmationViewController.swift */; };
 		D8FFBBA522AA7F98006039FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FFBBA422AA7F98006039FC /* AppDelegate.swift */; };
 		D8FFBBA722AA7F99006039FC /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FFBBA622AA7F99006039FC /* TodoTableViewController.swift */; };
 		D8FFBBAA22AA7F99006039FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FFBBA822AA7F99006039FC /* Main.storyboard */; };
 		D8FFBBAC22AA7F9A006039FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8FFBBAB22AA7F9A006039FC /* Assets.xcassets */; };
 		D8FFBBAF22AA7F9A006039FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8FFBBAD22AA7F9A006039FC /* LaunchScreen.storyboard */; };
-		D8FFBBB722ADA440006039FC /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FFBBB622ADA440006039FC /* EditViewController.swift */; };
 		D8FFBBB922ADAD2B006039FC /* MyTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FFBBB822ADAD2B006039FC /* MyTodo.swift */; };
 		D8FFF68B22D35CD500665711 /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8FFF68A22D35CD500665711 /* AddTodoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		878436918F12DDED9262EDD2 /* Pods_MyTodoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTodoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A67BD634ECCF32CF93DCF2CF /* Pods-MyTodoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTodoList.release.xcconfig"; path = "Target Support Files/Pods-MyTodoList/Pods-MyTodoList.release.xcconfig"; sourceTree = "<group>"; };
-		AA8D2C1DCA0CA0B38FC9BA22 /* Pods-MyTodoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTodoList.debug.xcconfig"; path = "Target Support Files/Pods-MyTodoList/Pods-MyTodoList.debug.xcconfig"; sourceTree = "<group>"; };
+		3128E78323982F910020C148 /* DayResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayResultViewController.swift; sourceTree = "<group>"; };
+		3128E78523982FA90020C148 /* DayResultDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayResultDetailViewController.swift; sourceTree = "<group>"; };
+		3128E78723982FB80020C148 /* SubDayResultDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubDayResultDetailViewController.swift; sourceTree = "<group>"; };
+		3128E78923982FCD0020C148 /* WeekResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekResultViewController.swift; sourceTree = "<group>"; };
+		3128E78B23982FE00020C148 /* WeekResultDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekResultDetailViewController.swift; sourceTree = "<group>"; };
+		3128E78D239830750020C148 /* SubWeekResultDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubWeekResultDetailViewController.swift; sourceTree = "<group>"; };
+		3128E78F239830A50020C148 /* TabmanDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabmanDisplay.swift; sourceTree = "<group>"; };
+		3128E791239830C00020C148 /* DataEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataEntry.swift; sourceTree = "<group>"; };
+		3128E793239830E40020C148 /* CustomSegments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegments.swift; sourceTree = "<group>"; };
+		3128E795239830F30020C148 /* UIBezierPathExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPathExtension.swift; sourceTree = "<group>"; };
+		3128E797239831020020C148 /* CALayerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
+		3128E799239831130020C148 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		3128E79B239831370020C148 /* BasicBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBarChart.swift; sourceTree = "<group>"; };
+		3128E79D239831480020C148 /* BasicBarChartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBarChartPresenter.swift; sourceTree = "<group>"; };
+		3128E79F239831590020C148 /* BasicBarEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicBarEntry.swift; sourceTree = "<group>"; };
+		3128E7A12398316E0020C148 /* BasicLineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicLineChart.swift; sourceTree = "<group>"; };
+		3128E7A32398317E0020C148 /* CurveAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveAlgorithm.swift; sourceTree = "<group>"; };
+		5CADABAF082FB4E606B2D6EB /* Pods_MyTodoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyTodoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87153620236D465E004EAA2D /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
+		87BC941D23621BE500379693 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8279AC922BA529C00ACB941 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D8279ACB22BA567400ACB941 /* EvaluViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluViewController.swift; sourceTree = "<group>"; };
-		D8FFBBA122AA7F98006039FC /* MyTodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82D5AF223418AF000A9214C /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
+		D82D5AF82341A66500A9214C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		D83EB6C3237E55650021509A /* save_alt_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = save_alt_black.png; path = Pics/save_alt_black.png; sourceTree = SOURCE_ROOT; };
+		D83EB6C5237F28DA0021509A /* box_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = box_big.png; path = Pics/box_big.png; sourceTree = SOURCE_ROOT; };
+		D83EB6C6237F28DB0021509A /* checkbox_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkbox_big.png; path = Pics/checkbox_big.png; sourceTree = SOURCE_ROOT; };
+		D83EB6C9237F2FF10021509A /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = close.png; path = Pics/close.png; sourceTree = SOURCE_ROOT; };
+		D83EB6CB237F385D0021509A /* fill_heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fill_heart.png; path = Pics/fill_heart.png; sourceTree = SOURCE_ROOT; };
+		D83EB6CC237F385D0021509A /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heart.png; path = Pics/heart.png; sourceTree = SOURCE_ROOT; };
+		D83EB6CF238371990021509A /* replay_black_192x192.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = replay_black_192x192.png; path = Pics/replay_black_192x192.png; sourceTree = SOURCE_ROOT; };
+		D83EB6D1238378CD0021509A /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D83EB6D7238522700021509A /* kanojo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kanojo.jpg; path = Pics/kanojo.jpg; sourceTree = SOURCE_ROOT; };
+		D83EB6D92385A9E70021509A /* book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = book.png; path = Pics/book.png; sourceTree = SOURCE_ROOT; };
+		D83EB6DB2385A9E80021509A /* desk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = desk.png; path = Pics/desk.png; sourceTree = SOURCE_ROOT; };
+		D83EB6DF2385AC350021509A /* calendar_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar_home.png; path = Pics/calendar_home.png; sourceTree = SOURCE_ROOT; };
+		D83EB6E12385AED30021509A /* calendar_label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar_label.png; path = Pics/calendar_label.png; sourceTree = SOURCE_ROOT; };
+		D83EB6E22385AED40021509A /* todo_label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = todo_label.png; path = Pics/todo_label.png; sourceTree = SOURCE_ROOT; };
+		D83EB6E5238E343D0021509A /* メンヘラ彼女_75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "メンヘラ彼女_75.png"; path = "Pics/メンヘラ彼女_75.png"; sourceTree = SOURCE_ROOT; };
+		D83EB6E6238E343D0021509A /* 背景simple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "背景simple.png"; path = "Pics/背景simple.png"; sourceTree = SOURCE_ROOT; };
+		D83EB6E7238E343E0021509A /* メンヘラ彼女_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "メンヘラ彼女_100.png"; path = "Pics/メンヘラ彼女_100.png"; sourceTree = SOURCE_ROOT; };
+		D83EB6E8238E343E0021509A /* メンヘラ彼女_50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "メンヘラ彼女_50.png"; path = "Pics/メンヘラ彼女_50.png"; sourceTree = SOURCE_ROOT; };
+		D83EB6ED2390382D0021509A /* メンヘラ彼女_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "メンヘラ彼女_0.png"; path = "Pics/メンヘラ彼女_0.png"; sourceTree = SOURCE_ROOT; };
+		D83EB6EE2390382E0021509A /* アセット 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "アセット 2.png"; path = "Pics/アセット 2.png"; sourceTree = SOURCE_ROOT; };
+		D83EB6F123903E3A0021509A /* セリフ_反転.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "セリフ_反転.png"; path = "Pics/セリフ_反転.png"; sourceTree = SOURCE_ROOT; };
+		D83EB6F3239421810021509A /* 背景ver.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "背景ver.2.png"; path = "Pics/背景ver.2.png"; sourceTree = SOURCE_ROOT; };
+		D83EB6F62395F92F0021509A /* todolist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = todolist.png; path = Pics/todolist.png; sourceTree = SOURCE_ROOT; };
+		D83EB6F92395FAB20021509A /* todolist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = todolist.png; path = Pics/todolist.png; sourceTree = SOURCE_ROOT; };
+		D83EB6FA2395FAB20021509A /* calendara_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendara_1.png; path = Pics/calendara_1.png; sourceTree = SOURCE_ROOT; };
+		D83EB6FD239600E80021509A /* アセット 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "アセット 9.png"; path = "Pics/アセット 9.png"; sourceTree = SOURCE_ROOT; };
+		D83EB6FF23975E5A0021509A /* 背景_test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "背景_test.png"; path = "Pics/背景_test.png"; sourceTree = SOURCE_ROOT; };
+		D83EB701239766330021509A /* メンヘラメーター.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "メンヘラメーター.png"; path = "Pics/メンヘラメーター.png"; sourceTree = SOURCE_ROOT; };
+		D83EB707239808BD0021509A /* ふきだし_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ふきだし_1.png"; path = "Pics/ふきだし_1.png"; sourceTree = SOURCE_ROOT; };
+		D83EB70923980A760021509A /* ふきだし_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ふきだし_2.png"; path = "Pics/ふきだし_2.png"; sourceTree = SOURCE_ROOT; };
+		D83EB70B23980DE30021509A /* ふきだし_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ふきだし_3.png"; path = "Pics/ふきだし_3.png"; sourceTree = SOURCE_ROOT; };
+		D83EB70D23980F760021509A /* ふきだし_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ふきだし_4.png"; path = "Pics/ふきだし_4.png"; sourceTree = SOURCE_ROOT; };
+		D83EB70F2398110A0021509A /* ふきだし_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ふきだし_4.png"; path = "Pics/ふきだし_4.png"; sourceTree = SOURCE_ROOT; };
+		D89B40F723AA011A0073E302 /* database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = database.swift; sourceTree = "<group>"; };
+		D8AD13AD23981686000BA77B /* TsukushiAMaruGothic.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = TsukushiAMaruGothic.ttc; sourceTree = "<group>"; };
+		D8AD13AF239A66DE000BA77B /* ふきだし_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ふきだし_5.png"; path = "Pics/ふきだし_5.png"; sourceTree = SOURCE_ROOT; };
+		D8C8531E236D54C800FEFBE7 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		D8C85322236D559600FEFBE7 /* NewCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCustomTableViewCell.swift; sourceTree = "<group>"; };
+		D8CC777B239E95920040941C /* furikaeri.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = furikaeri.png; sourceTree = "<group>"; };
+		D8CC777C239E95930040941C /* calendar_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar_2.png; sourceTree = "<group>"; };
+		D8CC777D239E95930040941C /* todolist_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = todolist_2.png; sourceTree = "<group>"; };
+		D8CC7781239F65990040941C /* ふきだし_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ふきだし_6.png"; path = "Pics/ふきだし_6.png"; sourceTree = SOURCE_ROOT; };
+		D8CC778923A0076F0040941C /* menhera_meter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menhera_meter.png; path = Pics/menhera_meter.png; sourceTree = SOURCE_ROOT; };
+		D8CC779723A15B960040941C /* button_f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_f.png; path = Pics/button_f.png; sourceTree = SOURCE_ROOT; };
+		D8CC779823A15B960040941C /* button_f2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_f2.png; path = Pics/button_f2.png; sourceTree = SOURCE_ROOT; };
+		D8CC779923A15B960040941C /* button_c.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_c.png; path = Pics/button_c.png; sourceTree = SOURCE_ROOT; };
+		D8CC779A23A15B970040941C /* button_t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button_t.png; path = Pics/button_t.png; sourceTree = SOURCE_ROOT; };
+		D8CC779F23A1786D0040941C /* run.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = run.png; path = Pics/run.png; sourceTree = SOURCE_ROOT; };
+		D8CC77A123A185320040941C /* c_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = c_icon.png; path = Pics/c_icon.png; sourceTree = SOURCE_ROOT; };
+		D8E543AC2375CC93005BBA86 /* ConfirmationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationTableViewCell.swift; sourceTree = "<group>"; };
+		D8E543AD2375CC93005BBA86 /* ConfirmationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationTableViewCell.xib; sourceTree = "<group>"; };
+		D8E543B02375D12D005BBA86 /* speechBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "speechBubble@2x.png"; path = "Pics/speechBubble@2x.png"; sourceTree = SOURCE_ROOT; };
+		D8E543B12375D12D005BBA86 /* メンヘラ_SD_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "メンヘラ_SD_0.png"; path = "Pics/メンヘラ_SD_0.png"; sourceTree = SOURCE_ROOT; };
+		D8E543B22375D12D005BBA86 /* メンヘラ_SD_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "メンヘラ_SD_100.png"; path = "Pics/メンヘラ_SD_100.png"; sourceTree = SOURCE_ROOT; };
+		D8E543B62375EC6C005BBA86 /* AllResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllResultsViewController.swift; sourceTree = "<group>"; };
+		D8E5457C23774DF2005BBA86 /* box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "box@2x.png"; path = "Pics/box@2x.png"; sourceTree = SOURCE_ROOT; };
+		D8E5457D23774DF2005BBA86 /* メンヘラ_SD_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "メンヘラ_SD_0.png"; path = "Pics/メンヘラ_SD_0.png"; sourceTree = SOURCE_ROOT; };
+		D8E5457E23774DF2005BBA86 /* メンヘラ_SD_100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "メンヘラ_SD_100.png"; path = "Pics/メンヘラ_SD_100.png"; sourceTree = SOURCE_ROOT; };
+		D8E5457F23774DF2005BBA86 /* speechBubble@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "speechBubble@2x.png"; path = "Pics/speechBubble@2x.png"; sourceTree = SOURCE_ROOT; };
+		D8E5458023774DF2005BBA86 /* checkBox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkBox@2x.png"; path = "Pics/checkBox@2x.png"; sourceTree = SOURCE_ROOT; };
+		D8E5458623774ED0005BBA86 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		D8E545C8237C5386005BBA86 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		D8E545E7237CEE87005BBA86 /* icons8-再生ボタン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-再生ボタン.png"; sourceTree = "<group>"; };
+		D8E545E9237CEF3D005BBA86 /* icons8-停止ボタン.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-停止ボタン.png"; sourceTree = "<group>"; };
+		D8E545ED237CF2CE005BBA86 /* complete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = complete.png; sourceTree = "<group>"; };
+		D8E545EF237CFAC0005BBA86 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		D8E545F7237E42F1005BBA86 /* EvaluViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluViewController2.swift; sourceTree = "<group>"; };
+		D8E545F9237E48C0005BBA86 /* return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = return.png; path = Pics/return.png; sourceTree = SOURCE_ROOT; };
+		D8F366482336BC4900EE8681 /* EvaluDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvaluDetailsViewController.swift; sourceTree = "<group>"; };
+		D8F3664A23379CD100EE8681 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		D8FFBBA122AA7F98006039FC /* かのサポ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "かのサポ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8FFBBA422AA7F98006039FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8FFBBA622AA7F99006039FC /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
 		D8FFBBA922AA7F99006039FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8FFBBAB22AA7F9A006039FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8FFBBAE22AA7F9A006039FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8FFBBB022AA7F9A006039FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D8FFBBB622ADA440006039FC /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		D8FFBBB822ADAD2B006039FC /* MyTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTodo.swift; sourceTree = "<group>"; };
 		D8FFF68A22D35CD500665711 /* AddTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
+		EC4BB95B43A21A5244A5E877 /* Pods-MyTodoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTodoList.debug.xcconfig"; path = "Target Support Files/Pods-MyTodoList/Pods-MyTodoList.debug.xcconfig"; sourceTree = "<group>"; };
+		F5416ECC8E7B667B9514EA68 /* Pods-MyTodoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyTodoList.release.xcconfig"; path = "Target Support Files/Pods-MyTodoList/Pods-MyTodoList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,28 +223,234 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B61E19B768CAC7ABB1D643 /* Pods_MyTodoList.framework in Frameworks */,
+				2221407E811387E65417991C /* Pods_MyTodoList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4EDE62C2A1AEEA6DCDE7DC37 /* Frameworks */ = {
+		123F96F75047A2C00F255B1B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				878436918F12DDED9262EDD2 /* Pods_MyTodoList.framework */,
+				5CADABAF082FB4E606B2D6EB /* Pods_MyTodoList.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3128E77C23982EB60020C148 /* FeedBackCharts */ = {
+			isa = PBXGroup;
+			children = (
+				3128E77D23982ECC0020C148 /* ChartsViewController */,
+				3128E77E23982ED60020C148 /* Shared */,
+				3128E77F23982EE00020C148 /* BarChart */,
+				3128E78023982EED0020C148 /* LineChart */,
+			);
+			path = FeedBackCharts;
+			sourceTree = "<group>";
+		};
+		3128E77D23982ECC0020C148 /* ChartsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3128E78123982F260020C148 /* DayResultVC */,
+				3128E78223982F320020C148 /* WeekResultVC */,
+				3128E78F239830A50020C148 /* TabmanDisplay.swift */,
+			);
+			path = ChartsViewController;
+			sourceTree = "<group>";
+		};
+		3128E77E23982ED60020C148 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				3128E791239830C00020C148 /* DataEntry.swift */,
+				3128E793239830E40020C148 /* CustomSegments.swift */,
+				3128E795239830F30020C148 /* UIBezierPathExtension.swift */,
+				3128E797239831020020C148 /* CALayerExtension.swift */,
+				3128E799239831130020C148 /* ArrayExtension.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		3128E77F23982EE00020C148 /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+				3128E79B239831370020C148 /* BasicBarChart.swift */,
+				3128E79D239831480020C148 /* BasicBarChartPresenter.swift */,
+				3128E79F239831590020C148 /* BasicBarEntry.swift */,
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
+		3128E78023982EED0020C148 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				3128E7A12398316E0020C148 /* BasicLineChart.swift */,
+				3128E7A32398317E0020C148 /* CurveAlgorithm.swift */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
+		3128E78123982F260020C148 /* DayResultVC */ = {
+			isa = PBXGroup;
+			children = (
+				3128E78323982F910020C148 /* DayResultViewController.swift */,
+				3128E78523982FA90020C148 /* DayResultDetailViewController.swift */,
+				3128E78723982FB80020C148 /* SubDayResultDetailViewController.swift */,
+			);
+			path = DayResultVC;
+			sourceTree = "<group>";
+		};
+		3128E78223982F320020C148 /* WeekResultVC */ = {
+			isa = PBXGroup;
+			children = (
+				3128E78923982FCD0020C148 /* WeekResultViewController.swift */,
+				3128E78B23982FE00020C148 /* WeekResultDetailViewController.swift */,
+				3128E78D239830750020C148 /* SubWeekResultDetailViewController.swift */,
+			);
+			path = WeekResultVC;
+			sourceTree = "<group>";
+		};
+		87BC941F23621BF700379693 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				87BC941D23621BE500379693 /* ViewController.swift */,
+				87153620236D465E004EAA2D /* SampleView.swift */,
+			);
+			name = Calendar;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D8527909D67C0B24CCBCB7FC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AA8D2C1DCA0CA0B38FC9BA22 /* Pods-MyTodoList.debug.xcconfig */,
-				A67BD634ECCF32CF93DCF2CF /* Pods-MyTodoList.release.xcconfig */,
+				EC4BB95B43A21A5244A5E877 /* Pods-MyTodoList.debug.xcconfig */,
+				F5416ECC8E7B667B9514EA68 /* Pods-MyTodoList.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D8AD13AC23981485000BA77B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				D8AD13AD23981686000BA77B /* TsukushiAMaruGothic.ttc */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		D8B687582356B5DC00DE6B9D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D8279AC922BA529C00ACB941 /* HomeViewController.swift */,
+				D8FFF68A22D35CD500665711 /* AddTodoViewController.swift */,
+				D8F366482336BC4900EE8681 /* EvaluDetailsViewController.swift */,
+				D8F3664A23379CD100EE8681 /* ConfirmationViewController.swift */,
+				D8E543AC2375CC93005BBA86 /* ConfirmationTableViewCell.swift */,
+				D8E543AD2375CC93005BBA86 /* ConfirmationTableViewCell.xib */,
+				D8E545C8237C5386005BBA86 /* ResultViewController.swift */,
+				3128E77C23982EB60020C148 /* FeedBackCharts */,
+				D8E543B62375EC6C005BBA86 /* AllResultsViewController.swift */,
+				D82D5AF223418AF000A9214C /* HomeNavigationController.swift */,
+			);
+			name = Home;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D8E5457923774C1C005BBA86 /* HomeToDo */ = {
+			isa = PBXGroup;
+			children = (
+				D8C8531E236D54C800FEFBE7 /* HomeTableViewController.swift */,
+				D8C85322236D559600FEFBE7 /* NewCustomTableViewCell.swift */,
+				D82D5AF82341A66500A9214C /* CustomTableViewCell.swift */,
+			);
+			name = HomeToDo;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D8E5457A23774CD8005BBA86 /* ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				D8FFBBA622AA7F99006039FC /* TodoTableViewController.swift */,
+				D8E5458623774ED0005BBA86 /* TodoCell.swift */,
+			);
+			name = ToDoList;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D8E5457B23774DB6005BBA86 /* Pics */ = {
+			isa = PBXGroup;
+			children = (
+				D8E5457C23774DF2005BBA86 /* box@2x.png */,
+				D8E5458023774DF2005BBA86 /* checkBox@2x.png */,
+				D8E5457F23774DF2005BBA86 /* speechBubble@2x.png */,
+				D83EB6FF23975E5A0021509A /* 背景_test.png */,
+				D83EB6E12385AED30021509A /* calendar_label.png */,
+				D8CC778923A0076F0040941C /* menhera_meter.png */,
+				D83EB6E22385AED40021509A /* todo_label.png */,
+				D8E5457D23774DF2005BBA86 /* メンヘラ_SD_0.png */,
+				D8E5457E23774DF2005BBA86 /* メンヘラ_SD_100.png */,
+				D8CC7781239F65990040941C /* ふきだし_6.png */,
+				D8CC779F23A1786D0040941C /* run.png */,
+				D83EB701239766330021509A /* メンヘラメーター.png */,
+				D83EB707239808BD0021509A /* ふきだし_1.png */,
+				D8E545E9237CEF3D005BBA86 /* icons8-停止ボタン.png */,
+				D83EB6F123903E3A0021509A /* セリフ_反転.png */,
+				D8CC779923A15B960040941C /* button_c.png */,
+				D8CC779723A15B960040941C /* button_f.png */,
+				D8CC779823A15B960040941C /* button_f2.png */,
+				D8CC779A23A15B970040941C /* button_t.png */,
+				D83EB6F3239421810021509A /* 背景ver.2.png */,
+				D8CC777C239E95930040941C /* calendar_2.png */,
+				D8CC777B239E95920040941C /* furikaeri.png */,
+				D8CC777D239E95930040941C /* todolist_2.png */,
+				D83EB70B23980DE30021509A /* ふきだし_3.png */,
+				D83EB6EE2390382E0021509A /* アセット 2.png */,
+				D83EB6FD239600E80021509A /* アセット 9.png */,
+				D83EB6ED2390382D0021509A /* メンヘラ彼女_0.png */,
+				D8AD13AF239A66DE000BA77B /* ふきだし_5.png */,
+				D83EB70D23980F760021509A /* ふきだし_4.png */,
+				D8CC77A123A185320040941C /* c_icon.png */,
+				D83EB6E8238E343E0021509A /* メンヘラ彼女_50.png */,
+				D83EB6E5238E343D0021509A /* メンヘラ彼女_75.png */,
+				D83EB6E7238E343E0021509A /* メンヘラ彼女_100.png */,
+				D83EB6E6238E343D0021509A /* 背景simple.png */,
+				D83EB6D92385A9E70021509A /* book.png */,
+				D83EB6FA2395FAB20021509A /* calendara_1.png */,
+				D83EB6F62395F92F0021509A /* todolist.png */,
+				D83EB70923980A760021509A /* ふきだし_2.png */,
+				D83EB6DF2385AC350021509A /* calendar_home.png */,
+				D83EB6DB2385A9E80021509A /* desk.png */,
+				D8E545E7237CEE87005BBA86 /* icons8-再生ボタン.png */,
+				D8E545ED237CF2CE005BBA86 /* complete.png */,
+				D83EB6F92395FAB20021509A /* todolist.png */,
+				D8E545F9237E48C0005BBA86 /* return.png */,
+				D83EB6C3237E55650021509A /* save_alt_black.png */,
+				D83EB6D7238522700021509A /* kanojo.jpg */,
+				D83EB6C5237F28DA0021509A /* box_big.png */,
+				D83EB6C9237F2FF10021509A /* close.png */,
+				D83EB6C6237F28DB0021509A /* checkbox_big.png */,
+				D83EB70F2398110A0021509A /* ふきだし_4.png */,
+				D83EB6CF238371990021509A /* replay_black_192x192.png */,
+				D83EB6CB237F385D0021509A /* fill_heart.png */,
+				D83EB6CC237F385D0021509A /* heart.png */,
+			);
+			path = Pics;
+			sourceTree = "<group>";
+		};
+		D8E545F5237E414D005BBA86 /* Evalu */ = {
+			isa = PBXGroup;
+			children = (
+				D8279ACB22BA567400ACB941 /* EvaluViewController.swift */,
+				D83EB6D1238378CD0021509A /* CustomButton.swift */,
+			);
+			path = Evalu;
+			sourceTree = "<group>";
+		};
+		D8E545F6237E42D3005BBA86 /* Evalu2 */ = {
+			isa = PBXGroup;
+			children = (
+				D8E545F7237E42F1005BBA86 /* EvaluViewController2.swift */,
+			);
+			path = Evalu2;
 			sourceTree = "<group>";
 		};
 		D8FFBB9822AA7F98006039FC = {
@@ -73,14 +459,14 @@
 				D8FFBBA322AA7F98006039FC /* MyTodoList */,
 				D8FFBBA222AA7F98006039FC /* Products */,
 				D8527909D67C0B24CCBCB7FC /* Pods */,
-				4EDE62C2A1AEEA6DCDE7DC37 /* Frameworks */,
+				123F96F75047A2C00F255B1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		D8FFBBA222AA7F98006039FC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8FFBBA122AA7F98006039FC /* MyTodoList.app */,
+				D8FFBBA122AA7F98006039FC /* かのサポ.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,14 +475,22 @@
 			isa = PBXGroup;
 			children = (
 				D8FFBBA422AA7F98006039FC /* AppDelegate.swift */,
-				D8FFF68A22D35CD500665711 /* AddTodoViewController.swift */,
-				D8279AC922BA529C00ACB941 /* HomeViewController.swift */,
-				D8279ACB22BA567400ACB941 /* EvaluViewController.swift */,
-				D8FFBBA622AA7F99006039FC /* TodoTableViewController.swift */,
-				D8FFBBB622ADA440006039FC /* EditViewController.swift */,
+				D8AD13AC23981485000BA77B /* Font */,
+				D8E5457B23774DB6005BBA86 /* Pics */,
+				87BC941F23621BF700379693 /* Calendar */,
+				D8E5457923774C1C005BBA86 /* HomeToDo */,
+				D8E5457A23774CD8005BBA86 /* ToDoList */,
+				D8E545F6237E42D3005BBA86 /* Evalu2 */,
+				D8E545F5237E414D005BBA86 /* Evalu */,
+				D8B687582356B5DC00DE6B9D /* Home */,
 				D8FFBBB822ADAD2B006039FC /* MyTodo.swift */,
+				D89B40F723AA011A0073E302 /* database.swift */,
+				D8E545EF237CFAC0005BBA86 /* UIView+Border.swift */,
 				D8FFBBA822AA7F99006039FC /* Main.storyboard */,
 				D8FFBBAB22AA7F9A006039FC /* Assets.xcassets */,
+				D8E543B02375D12D005BBA86 /* speechBubble@2x.png */,
+				D8E543B12375D12D005BBA86 /* メンヘラ_SD_0.png */,
+				D8E543B22375D12D005BBA86 /* メンヘラ_SD_100.png */,
 				D8FFBBAD22AA7F9A006039FC /* LaunchScreen.storyboard */,
 				D8FFBBB022AA7F9A006039FC /* Info.plist */,
 			);
@@ -110,11 +504,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8FFBBB322AA7F9A006039FC /* Build configuration list for PBXNativeTarget "MyTodoList" */;
 			buildPhases = (
-				9C3BCE69A120121697883C4D /* [CP] Check Pods Manifest.lock */,
+				CDB42CE40764F4039D19B758 /* [CP] Check Pods Manifest.lock */,
 				D8FFBB9D22AA7F98006039FC /* Sources */,
 				D8FFBB9E22AA7F98006039FC /* Frameworks */,
 				D8FFBB9F22AA7F98006039FC /* Resources */,
-				27B12B92DD7F92CB8DC826BD /* [CP] Embed Pods Frameworks */,
+				CC4EECD4D0873735B35C532F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,7 +516,7 @@
 			);
 			name = MyTodoList;
 			productName = MyTodoList;
-			productReference = D8FFBBA122AA7F98006039FC /* MyTodoList.app */;
+			productReference = D8FFBBA122AA7F98006039FC /* かのサポ.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -163,16 +557,74 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8CC777F239E95930040941C /* calendar_2.png in Resources */,
+				D8AD13AE23981CB3000BA77B /* TsukushiAMaruGothic.ttc in Resources */,
+				D8E5458123774DF2005BBA86 /* box@2x.png in Resources */,
+				D83EB6D0238371990021509A /* replay_black_192x192.png in Resources */,
+				D83EB6E02385AC360021509A /* calendar_home.png in Resources */,
+				D83EB6DE2385A9E80021509A /* desk.png in Resources */,
+				D8E545EE237CF2CE005BBA86 /* complete.png in Resources */,
+				D83EB6F223903E3B0021509A /* セリフ_反転.png in Resources */,
+				D8CC779B23A15B970040941C /* button_f.png in Resources */,
+				D83EB6C7237F28DB0021509A /* box_big.png in Resources */,
+				D8E543B52375D12D005BBA86 /* メンヘラ_SD_100.png in Resources */,
+				D83EB70E23980F760021509A /* ふきだし_4.png in Resources */,
+				D83EB70023975E5A0021509A /* 背景_test.png in Resources */,
+				D8E5458423774DF2005BBA86 /* speechBubble@2x.png in Resources */,
+				D83EB6FB2395FAB20021509A /* todolist.png in Resources */,
+				D8CC779E23A15B970040941C /* button_t.png in Resources */,
+				D8E545EA237CEF3D005BBA86 /* icons8-停止ボタン.png in Resources */,
+				D8E543B42375D12D005BBA86 /* メンヘラ_SD_0.png in Resources */,
+				D8CC77A223A185330040941C /* c_icon.png in Resources */,
+				D8CC777E239E95930040941C /* furikaeri.png in Resources */,
+				D83EB6E32385AED40021509A /* calendar_label.png in Resources */,
+				D8E5458323774DF2005BBA86 /* メンヘラ_SD_100.png in Resources */,
+				D83EB6E42385AED40021509A /* todo_label.png in Resources */,
+				D8E5458223774DF2005BBA86 /* メンヘラ_SD_0.png in Resources */,
+				D83EB7102398110A0021509A /* ふきだし_4.png in Resources */,
+				D83EB6F82395F92F0021509A /* todolist.png in Resources */,
+				D83EB70A23980A760021509A /* ふきだし_2.png in Resources */,
+				D8CC7782239F65990040941C /* ふきだし_6.png in Resources */,
 				D8FFBBAF22AA7F9A006039FC /* LaunchScreen.storyboard in Resources */,
+				D83EB6DC2385A9E80021509A /* book.png in Resources */,
+				D83EB6F4239421810021509A /* 背景ver.2.png in Resources */,
 				D8FFBBAC22AA7F9A006039FC /* Assets.xcassets in Resources */,
+				D8CC7780239E95930040941C /* todolist_2.png in Resources */,
+				D8E543B32375D12D005BBA86 /* speechBubble@2x.png in Resources */,
+				D83EB708239808BF0021509A /* ふきだし_1.png in Resources */,
+				D83EB70C23980DE30021509A /* ふきだし_3.png in Resources */,
+				D83EB6CE237F385D0021509A /* heart.png in Resources */,
+				D83EB702239766330021509A /* メンヘラメーター.png in Resources */,
+				D8E545E8237CEE87005BBA86 /* icons8-再生ボタン.png in Resources */,
+				D8E543AF2375CC93005BBA86 /* ConfirmationTableViewCell.xib in Resources */,
+				D83EB6FE239600E90021509A /* アセット 9.png in Resources */,
+				D83EB6EB238E343E0021509A /* メンヘラ彼女_100.png in Resources */,
+				D8AD13B0239A66DE000BA77B /* ふきだし_5.png in Resources */,
+				D8CC778A23A007700040941C /* menhera_meter.png in Resources */,
+				D8E545FA237E48C0005BBA86 /* return.png in Resources */,
+				D83EB6F02390382E0021509A /* アセット 2.png in Resources */,
+				D83EB6FC2395FAB20021509A /* calendara_1.png in Resources */,
+				D83EB6EC238E343E0021509A /* メンヘラ彼女_50.png in Resources */,
+				D8CC779C23A15B970040941C /* button_f2.png in Resources */,
+				D83EB6EF2390382E0021509A /* メンヘラ彼女_0.png in Resources */,
+				D83EB6EA238E343E0021509A /* 背景simple.png in Resources */,
 				D8FFBBAA22AA7F99006039FC /* Main.storyboard in Resources */,
+				D8CC77A023A1786D0040941C /* run.png in Resources */,
+				D83EB6C4237E55650021509A /* save_alt_black.png in Resources */,
+				D8CC779D23A15B970040941C /* button_c.png in Resources */,
+				D83EB6D8238522700021509A /* kanojo.jpg in Resources */,
+				D83EB6CD237F385D0021509A /* fill_heart.png in Resources */,
+				D8E5458523774DF2005BBA86 /* checkBox@2x.png in Resources */,
+				D83EB6CA237F2FF10021509A /* close.png in Resources */,
+				D83EB6C8237F28DB0021509A /* checkbox_big.png in Resources */,
+				D83EB6E9238E343E0021509A /* メンヘラ彼女_75.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		27B12B92DD7F92CB8DC826BD /* [CP] Embed Pods Frameworks */ = {
+		CC4EECD4D0873735B35C532F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -189,7 +641,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyTodoList/Pods-MyTodoList-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9C3BCE69A120121697883C4D /* [CP] Check Pods Manifest.lock */ = {
+		CDB42CE40764F4039D19B758 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -219,12 +671,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8279ACC22BA567400ACB941 /* EvaluViewController.swift in Sources */,
+				D8C85323236D559600FEFBE7 /* NewCustomTableViewCell.swift in Sources */,
+				D8E543AE2375CC93005BBA86 /* ConfirmationTableViewCell.swift in Sources */,
+				3128E792239830C00020C148 /* DataEntry.swift in Sources */,
+				D8E543B72375EC6C005BBA86 /* AllResultsViewController.swift in Sources */,
 				D8279ACA22BA529C00ACB941 /* HomeViewController.swift in Sources */,
+				D8E5458723774ED0005BBA86 /* TodoCell.swift in Sources */,
+				3128E7A0239831590020C148 /* BasicBarEntry.swift in Sources */,
+				87BC941E23621BE500379693 /* ViewController.swift in Sources */,
+				D8E545F8237E42F1005BBA86 /* EvaluViewController2.swift in Sources */,
+				3128E78623982FA90020C148 /* DayResultDetailViewController.swift in Sources */,
+				D8F366492336BC4900EE8681 /* EvaluDetailsViewController.swift in Sources */,
+				3128E78823982FB80020C148 /* SubDayResultDetailViewController.swift in Sources */,
+				3128E7A42398317E0020C148 /* CurveAlgorithm.swift in Sources */,
+				D8F3664B23379CD100EE8681 /* ConfirmationViewController.swift in Sources */,
+				3128E78E239830750020C148 /* SubWeekResultDetailViewController.swift in Sources */,
+				D82D5AF323418AF000A9214C /* HomeNavigationController.swift in Sources */,
+				3128E79C239831370020C148 /* BasicBarChart.swift in Sources */,
+				3128E798239831020020C148 /* CALayerExtension.swift in Sources */,
+				D83EB6D2238378CD0021509A /* CustomButton.swift in Sources */,
+				3128E78423982F910020C148 /* DayResultViewController.swift in Sources */,
 				D8FFBBA722AA7F99006039FC /* TodoTableViewController.swift in Sources */,
+				87153621236D465F004EAA2D /* SampleView.swift in Sources */,
 				D8FFBBA522AA7F98006039FC /* AppDelegate.swift in Sources */,
+				3128E79A239831130020C148 /* ArrayExtension.swift in Sources */,
+				D8C8531F236D54C800FEFBE7 /* HomeTableViewController.swift in Sources */,
+				3128E796239830F30020C148 /* UIBezierPathExtension.swift in Sources */,
+				D8E545F0237CFAC0005BBA86 /* UIView+Border.swift in Sources */,
+				3128E794239830E40020C148 /* CustomSegments.swift in Sources */,
+				3128E78C23982FE00020C148 /* WeekResultDetailViewController.swift in Sources */,
+				3128E7A22398316E0020C148 /* BasicLineChart.swift in Sources */,
+				D82D5AF92341A66500A9214C /* CustomTableViewCell.swift in Sources */,
+				3128E78A23982FCD0020C148 /* WeekResultViewController.swift in Sources */,
 				D8FFF68B22D35CD500665711 /* AddTodoViewController.swift in Sources */,
-				D8FFBBB722ADA440006039FC /* EditViewController.swift in Sources */,
 				D8FFBBB922ADAD2B006039FC /* MyTodo.swift in Sources */,
+				D8E545C9237C5386005BBA86 /* ResultViewController.swift in Sources */,
+				3128E79E239831480020C148 /* BasicBarChartPresenter.swift in Sources */,
+				3128E790239830A50020C148 /* TabmanDisplay.swift in Sources */,
+				D89B40F823AA011A0073E302 /* database.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +852,7 @@
 		};
 		D8FFBBB422AA7F9A006039FC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA8D2C1DCA0CA0B38FC9BA22 /* Pods-MyTodoList.debug.xcconfig */;
+			baseConfigurationReference = EC4BB95B43A21A5244A5E877 /* Pods-MyTodoList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -379,7 +863,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = practice.MyTodoList;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "かのサポ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -387,18 +871,18 @@
 		};
 		D8FFBBB522AA7F9A006039FC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A67BD634ECCF32CF93DCF2CF /* Pods-MyTodoList.release.xcconfig */;
+			baseConfigurationReference = F5416ECC8E7B667B9514EA68 /* Pods-MyTodoList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 29U9PMS82W;
+				DEVELOPMENT_TEAM = P7ZWK7PF5W;
 				INFOPLIST_FILE = MyTodoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = practice.MyTodoList;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = practice.MyTodoList123;
+				PRODUCT_NAME = "かのサポ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
