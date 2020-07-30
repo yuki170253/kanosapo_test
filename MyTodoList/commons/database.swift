@@ -15,27 +15,27 @@ class Todo: Object {
     override static func primaryKey() -> String? {
         return "todoid"
     }
-    var rate: Int {
+    var rate: Int { //タスクの達成率
         let double_donetime :Double = Double(donetime)
         let double_dotime :Double = Double(dotime)
         let ans: Int = Int((double_donetime/double_dotime)*100.0)
         return ans
     }
-    var dotime_string: String {
+    var dotime_string: String { //時間のフォーマッター
         var ans: String = ""
         ans = String(format: "%02dh %02dm", (dotime / 3600), (dotime / 60) % 60)
         return ans
     }
 }
 
-class Calendar24: Object {
-    @objc dynamic var calendarid = randomString(length: 10)
-    @objc dynamic var todoDone = false
-    @objc dynamic var start = Date()
-    @objc dynamic var taskflag = true
-    @objc dynamic var default_allday = false
-    @objc dynamic var c_dotime = 0
-    @objc dynamic var end = Date()
+class Calendar24: Object {  //24時間カレンダーに追加されているタスクの情報
+    @objc dynamic var calendarid = randomString(length: 10) //ID
+    @objc dynamic var todoDone = false //タスクをやったか←いる？
+    @objc dynamic var start = Date() //タスクの開始時間
+    @objc dynamic var taskflag = true //予定かタスクか←聞きたい？
+    @objc dynamic var default_allday = false //終日
+    @objc dynamic var c_dotime = 0 //タスクの時間幅
+    @objc dynamic var end = Date() //←いらなくね
     let todo = LinkingObjects(fromType: Todo.self, property: "calendars")
     override static func primaryKey() -> String? {
         return "calendarid"

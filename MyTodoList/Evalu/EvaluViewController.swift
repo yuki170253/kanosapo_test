@@ -38,16 +38,18 @@ class EvaluViewController: UIViewController, UIApplicationDelegate  {
     let image_stop:UIImage = UIImage(named:"icons8-停止ボタン")!
     var backText: String?
     let realm = try! Realm()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         vc = storyboard?.instantiateViewController(withIdentifier: "popupmenu") as? EvaluViewController2
         button.layer.cornerRadius = 50.0
-        // 登録
         NotificationCenter.default.addObserver(self, selector: #selector(EnterForeground(
             notification:)), name: UIApplication.willEnterForegroundNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(EnterBackground(
             notification:)), name: UIApplication.didEnterBackgroundNotification, object: nil)
-        print("viewWillappear")
+        // 登録
+        print("viewDidLoad()")
         let result = realm.object(ofType: Todo.self, forPrimaryKey: "\(todoid)")
         donetime = result!.donetime
         store_donetime = donetime
@@ -89,8 +91,8 @@ class EvaluViewController: UIViewController, UIApplicationDelegate  {
             let diff = end.timeIntervalSince(start)
             print("diff")
             print(diff)
-            countNum += Int(diff/2)
-            donetime += Int(diff/2)
+            countNum += Int(diff/4)
+            donetime += Int(diff/4)
             print(end)
         }
     }
@@ -128,9 +130,9 @@ class EvaluViewController: UIViewController, UIApplicationDelegate  {
             self.button.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }, completion: nil)
         if timerRunning == false {
-            
-            let url = URL(string: "https:f.easyuploader.app/eu-prd/upload/20191213053714_37317a364e.mobileconfig")
-            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+            //let url = URL(string: "https:f.easyuploader.app/eu-prd/upload/20191213053714_37317a364e.mobileconfig")
+            //UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+            //⇩いらない
             NotificationCenter.default.addObserver(self, selector: #selector(EnterForeground(
             notification:)), name: UIApplication.willEnterForegroundNotification, object: nil)
             
