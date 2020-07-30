@@ -25,9 +25,6 @@ class HomeViewController: UIViewController {
     let realm = try! Realm()
     override func viewDidLoad() { //切り替えても呼び出されない...
         super.viewDidLoad()
-//        let userDefaults = UserDefaults.standard
-//        userDefaults.removeObject(forKey: "todoList")
-//        userDefaults.removeObject(forKey: "CalendarList")
         print(Realm.Configuration.defaultConfiguration.fileURL!)
         var percent:Int = 0
         
@@ -46,39 +43,6 @@ class HomeViewController: UIViewController {
             talk.adjustsFontSizeToFitWidth = true
             talk.text = talkcontent
         }
-        
-        
-        /*
-        var calendarListArray = all_data_c()
-        calendarListArray = sort_array(arrays: calendarListArray)
-        todoListArray = all_data()
-        debug(todo_array: todoListArray, c_array: calendarListArray)
-        print("This")
-        //sort_array(arrays: calendarListArray)
-        delete_notcurrent(arrays: calendarListArray)
-        var indexs_c :[Int]
-        indexs_c = search_c_index(array: calendarListArray, date: convert_string(date: Date()))
-        print("indexs_c：\(indexs_c)")
-        if indexs_c.count > 0{
-            task_name = calendarListArray[indexs_c[0]].todoTitle!
-            //let span = convert_date(string: calendarListArray[0].start).timeIntervalSinceNow
-            //print(span)
-            //算出後の日付
-            let modifiedDate = Calendar.current.date(byAdding: .hour, value: 8, to: convert_date_details(string: calendarListArray[indexs_c[0]].start))!
-            let nowDate = Calendar.current.date(byAdding: .hour, value: 8, to: Date())!
-            let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second, .nanosecond], from: nowDate, to: modifiedDate)
-            print("ここ")
-            print(dateComponents)
-            if dateComponents.hour == 0 {
-                talkcontent = String(dateComponents.minute!) + "分後に\(task_name)のタスクが入っているよ！"
-            }else{
-                talkcontent = "\(dateComponents.hour!)時間\(dateComponents.minute!)分後に\(task_name)のタスクが入っているよ！"
-            }
-            talk.adjustsFontSizeToFitWidth = true
-            talk.text = talkcontent
-        }
-        */
-        
         
         percent = Int.random(in: 0..<100)
         drawgauge(stop: CGFloat(percent))
