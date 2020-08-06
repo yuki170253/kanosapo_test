@@ -34,7 +34,7 @@ class EvaluViewController2: UIViewController {
         speech_label.text = ""
         self.animationTimer = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(self.animate), userInfo: nil, repeats: true)
     }
-    
+
     @objc func animate() {
         UIView.animate(withDuration: 0.5) {
             if self.menherakanojo.frame.origin.y == 135.0 {
@@ -65,17 +65,6 @@ class EvaluViewController2: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         presentingViewController?.beginAppearanceTransition(false, animated: animated)
         super.viewWillAppear(animated)
-        /*
-        if let presented = self.presentedViewController {
-            if type(of: presented) == ResultViewController.self {
-                print(type(of: presented))
-                dismiss(animated: false, completion: {
-                })
-                //let parentVC = self.presentingViewController as! EvaluViewController
-                //parentVC.navigationController?.popToRootViewController(animated: false)
-            }
-        }
- */
     }
     
     

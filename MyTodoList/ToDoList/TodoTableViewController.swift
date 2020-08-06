@@ -95,18 +95,6 @@ class TodoTableViewController: UIViewController, UITableViewDataSource, UITableV
         return cell
     }
     
-    //セルが選択された時の処理
-    /*
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("選択された時｜section：\(indexPath.section) row：\(indexPath.row)")
-        print("選択された時のindexs：\(indexs)")
-        print("選択された時のindex：\(indexs[indexPath.section][indexPath.row])")
-        print("\(todoListArray[indexs[indexPath.section][indexPath.row]].todoDone)")
-        print("\(todoListArray[indexs[indexPath.section][indexPath.row]].todoTitle!)")
-        //days = day_list(arrays: todoList)
-    }
-    */
-    
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }

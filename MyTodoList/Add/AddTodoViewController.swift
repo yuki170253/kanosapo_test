@@ -16,17 +16,7 @@ class AddTodoViewController: FormViewController {
         super.viewDidLoad()
         //データの読み込み
         tableView.backgroundColor = #colorLiteral(red: 1, green: 0.9324973226, blue: 0.9340327382, alpha: 1)
-        let userDefaults = UserDefaults.standard
-        if let storedTodoList = userDefaults.object(forKey: "todoList") as? Data {
-            do {
-                if let unarchiveTodoList = try NSKeyedUnarchiver.unarchivedObject(ofClasses: [NSArray.self, MyTodo.self], from: storedTodoList) as? [MyTodo] {
-                    todoListArray.append(contentsOf: unarchiveTodoList)
-                }
-            } catch {
-
-            }
-        }
-        
+    
         //フォームの作成
         var rules = RuleSet<String>()
         let ruleRequiredViaClosure = RuleClosure<String> { rowValue in
@@ -160,8 +150,7 @@ class AddTodoViewController: FormViewController {
                         self.navigationController?.popViewController(animated: true)
                         //self.navigationController?.popToRootViewController(animated: true)
                     }
-                }.cellSetup { cell, row in cell.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9019607843, blue: 0.9098039216, alpha: 1);
-                }
+                }.cellSetup { cell, row in cell.backgroundColor = #colorLiteral(red: 0.9490196078, green: 0.9019607843, blue: 0.9098039216, alpha: 1);}
     }
 }
 
